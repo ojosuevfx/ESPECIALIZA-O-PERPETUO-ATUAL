@@ -83,10 +83,10 @@ export default function Founder() {
             borderLeft: "3px solid rgba(200,169,110,0.6)",
           }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: "0 0 10px", fontStyle: "italic" }}>
-              "A filosofia é o amor da sabedoria e, de certo modo, a familiaridade com ela."
+              "De todas as coisas, a mais desejável é a sabedoria."
             </p>
             <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: "12px", color: "#c8a96e", letterSpacing: "0.04em", textTransform: "uppercase" }}>
-              Hugo de São Vítor, Didascálicon
+              Hugo de São Vítor, Didascalicon
             </span>
           </div>
         </motion.div>
