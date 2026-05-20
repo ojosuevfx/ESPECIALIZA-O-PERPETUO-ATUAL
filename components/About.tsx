@@ -60,6 +60,21 @@ export default function About() {
             A Especialização em Aristóteles é um programa para quem quer estudar filosofia tradicional com profundidade e estrutura — sem precisar de faculdade, sem estudar sozinho, no seu próprio ritmo. O currículo percorre as grandes áreas do conhecimento filosófico na ordem que a tradição clássica sempre seguiu: Lógica, Filosofia da Natureza, Ética, Política e Metafísica.
           </p>
 
+          <div style={{
+            padding: "20px 24px",
+            borderRadius: "12px",
+            background: "rgba(200,169,110,0.04)",
+            border: "1px solid rgba(200,169,110,0.12)",
+            borderLeft: "3px solid rgba(200,169,110,0.5)",
+          }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "14px", lineHeight: "165%", color: "var(--color-text-muted)", margin: "0 0 8px", fontStyle: "italic" }}>
+              "Todos os homens têm, por natureza, o desejo de conhecer."
+            </p>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: "11px", color: "var(--color-accent)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
+              Aristóteles, Metafísica I, I
+            </span>
+          </div>
+
           <Link href="#ingresso" className="btn-cta"
             style={{ display: "inline-flex", alignItems: "center", gap: "10px", padding: "13px 28px", borderRadius: "200px", textDecoration: "none", background: "linear-gradient(90deg, #c8a96e 0%, #e2c98a 100%)", cursor: "pointer", width: "fit-content" }}
           >
