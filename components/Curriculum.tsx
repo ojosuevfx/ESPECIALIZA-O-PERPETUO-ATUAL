@@ -5,17 +5,6 @@ import { useRef, useEffect, useState } from "react";
 
 const steps = [
   {
-    label: "Início",
-    title: "Aulas Introdutórias",
-    items: [
-      "C.S Lewis — Aprendizado em Tempos de Guerra",
-      "Diálogos de Platão — Mênon",
-      "Diálogos de Platão — Apologia",
-      "Euclides — Elementos, Livro 1",
-    ],
-    note: "Ponto de partida para qualquer nível de formação",
-  },
-  {
     label: "Lógica I",
     title: "Os 5 Predicáveis — Porfírio, Isagoge",
     items: [
@@ -57,42 +46,35 @@ const steps = [
     note: null,
   },
   {
-    label: "Lógica IV",
-    title: "Primeiros Analíticos — Aristóteles",
+    label: "Analíticos",
+    title: "Analíticos — Aristóteles",
     items: [
-      "Livro I, cap. 1",
-      "Livro I, cap. 2–3",
-      "Livro I, cap. 4",
-      "Livro I, cap. 5",
-      "Livro I, cap. 6",
-      "Livro I, cap. 7",
-      "Livro II, cap. 21",
-      "Livro II, cap. 22",
-      "Livro II, cap. 23–24",
-      "Livro II, cap. 25–26",
-      "Livro II, cap. 27",
-    ],
-    note: null,
-  },
-  {
-    label: "Lógica V",
-    title: "Analíticos Posteriores — Aristóteles",
-    items: [
-      "Livro I, cap. 1",
-      "Livro I, cap. 2",
-      "Livro I, cap. 3",
-      "Livro I, cap. 4",
-      "Livro I, cap. 5",
-      "Livro I, cap. 6–7",
-      "Livro I, cap. 8–9",
-      "Livro I, cap. 10–11",
-      "Livro I, cap. 12",
-      "Livro I, cap. 13–14",
-      "Livro II, cap. 1–2",
-      "Livro II, cap. 3–4",
-      "Livro II, cap. 8",
-      "Livro II, cap. 9–10",
-      "Livro II, cap. 19",
+      "Primeiros — Livro I, cap. 1",
+      "Primeiros — Livro I, cap. 2–3",
+      "Primeiros — Livro I, cap. 4",
+      "Primeiros — Livro I, cap. 5",
+      "Primeiros — Livro I, cap. 6",
+      "Primeiros — Livro I, cap. 7",
+      "Primeiros — Livro II, cap. 21",
+      "Primeiros — Livro II, cap. 22",
+      "Primeiros — Livro II, cap. 23–24",
+      "Primeiros — Livro II, cap. 25–26",
+      "Primeiros — Livro II, cap. 27",
+      "Posteriores — Livro I, cap. 1",
+      "Posteriores — Livro I, cap. 2",
+      "Posteriores — Livro I, cap. 3",
+      "Posteriores — Livro I, cap. 4",
+      "Posteriores — Livro I, cap. 5",
+      "Posteriores — Livro I, cap. 6–7",
+      "Posteriores — Livro I, cap. 8–9",
+      "Posteriores — Livro I, cap. 10–11",
+      "Posteriores — Livro I, cap. 12",
+      "Posteriores — Livro I, cap. 13–14",
+      "Posteriores — Livro II, cap. 1–2",
+      "Posteriores — Livro II, cap. 3–4",
+      "Posteriores — Livro II, cap. 8",
+      "Posteriores — Livro II, cap. 9–10",
+      "Posteriores — Livro II, cap. 19",
     ],
     note: null,
   },
@@ -110,7 +92,7 @@ const steps = [
     items: [
       "Comentários aos Analíticos Posteriores — Proêmio",
     ],
-    note: "Encerramento do Ano 1 — domínio completo da lógica clássica",
+    note: "Encerramento — domínio completo da lógica clássica",
   },
 ];
 
@@ -229,17 +211,17 @@ export default function Curriculum() {
         {/* Left — desce junto com o scroll da seção */}
         <motion.div ref={leftRef} style={{ y: leftY }}>
           <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#c8a96e", display: "block", marginBottom: "20px" }}>
-            O Currículo — Ano 1
+            O Currículo — Lógica
           </span>
           <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "34px", lineHeight: "116%", letterSpacing: "-0.025em", color: "#F4F5F6", margin: "0 0 20px" }}>
-            Da partida à lógica aristotélica completa.
+            O estudo da Lógica: do começo ao domínio completo do Órganon.
           </h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "14px", lineHeight: "170%", color: "#8A9AA4", margin: "0 0 24px" }}>
-            O primeiro ano constrói a estrutura fundamental do pensamento filosófico. Você começa com textos de introdução e termina com domínio da lógica clássica — a ferramenta de todo filósofo.
+            A Lógica é o ponto de partida de toda a filosofia clássica. Aqui você estuda o Órganon de Aristóteles do início ao fim — a ferramenta fundamental de todo filósofo.
           </p>
           <div style={{ padding: "16px 20px", borderRadius: "12px", background: "rgba(200,169,110,0.05)", border: "1px solid rgba(200,169,110,0.10)" }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "13px", lineHeight: "160%", color: "#8A9AA4", margin: 0 }}>
-              O currículo completo dos 4 anos está disponível após o ingresso. O Ano 1 já é suficiente para transformar sua forma de pensar.
+              O currículo completo está disponível após o ingresso.
             </p>
           </div>
         </motion.div>

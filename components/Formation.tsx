@@ -4,25 +4,25 @@ import { motion } from "framer-motion";
 
 const years = [
   {
-    year: "Ano I",
+    year: "",
     title: "Lógica",
     desc: "O instrumento do pensamento. Sem ele, nenhuma outra área da filosofia se sustenta.",
     topics: ["Categorias — Aristóteles", "Da Interpretação — Aristóteles", "Analíticos Anteriores e Posteriores", "Tópicos e Refutações Sofísticas"],
   },
   {
-    year: "Ano II",
+    year: "",
     title: "Filosofia da Natureza e Psicologia",
     desc: "Os princípios do mundo natural e da alma humana.",
     topics: ["Física — Aristóteles", "De Generatione", "De Anima — Aristóteles"],
   },
   {
-    year: "Ano III",
+    year: "",
     title: "Ética e Política",
     desc: "A vida moral e cívica. O que é uma vida bem vivida e como os homens devem se organizar.",
     topics: ["Ética a Nicômaco — Aristóteles", "Política — Aristóteles"],
   },
   {
-    year: "Ano IV",
+    year: "",
     title: "Metafísica",
     desc: "O coroamento. O ser enquanto ser, as primeiras causas, a teologia natural.",
     topics: ["Metafísica — Aristóteles"],
@@ -50,10 +50,10 @@ export default function Formation() {
           </span>
           <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: "48px" }} className="formation-heading-row">
             <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "36px", lineHeight: "116%", letterSpacing: "-0.025em", color: "var(--color-text-primary)", margin: 0, maxWidth: "440px" }}>
-              Formação de quatro anos em Aristóteles.
+              As grandes áreas da filosofia clássica.
             </h2>
             <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "360px", margin: 0, flexShrink: 0 }} className="formation-subtext">
-              Cada ano aprofunda o anterior, seguindo a ordem clássica do Thomas Aquinas College — da Lógica à Metafísica.
+              Cada área aprofunda a anterior, seguindo a divisão clássica da filosofia tradicional — da Lógica à Metafísica.
             </p>
           </div>
         </motion.div>

@@ -83,10 +83,10 @@ export default function Founder() {
             borderLeft: "3px solid rgba(200,169,110,0.6)",
           }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: "0 0 10px", fontStyle: "italic" }}>
-              "O currículo é o do Thomas Aquinas College. O professor é ex-aluno do TAC. A tradição chega ao Brasil pela porta certa."
+              "Aprende tudo — verás depois que nada é supérfluo. O saber parco não traz alegria."
             </p>
             <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: "12px", color: "#c8a96e", letterSpacing: "0.04em", textTransform: "uppercase" }}>
-              Lucca de Tomás
+              Hugo de São Vítor, Didascalicon
             </span>
           </div>
         </motion.div>

@@ -134,8 +134,8 @@ export default function Hero() {
         {/* H1 */}
         <h1 className="hero-h1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, lineHeight: "106%", letterSpacing: "-0.035em", fontSize: "80px", margin: 0 }}>
           {[
-            { text: "Quatro anos para dominar", gold: false },
-            { text: "a filosofia tradicional,", gold: false },
+            { text: "Domine a filosofia", gold: false },
+            { text: "tradicional,", gold: false },
             { text: "pela porta certa.", gold: true },
           ].map((line, i) => (
             <motion.span
@@ -158,7 +158,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
           style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "17px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "560px", margin: 0 }}
         >
-          A Especialização em Aristóteles importa para o Brasil o currículo do Thomas Aquinas College — Lógica, Filosofia da Natureza, Ética, Política e Metafísica — com aulas semanais conduzidas por Lucca de Tomás. Sem misturas modernas. Sem solidão. Com método.
+          A Especialização em Aristóteles percorre as grandes áreas da filosofia clássica — Lógica, Filosofia da Natureza, Ética, Política e Metafísica — guiada por Lucca de Tomás. Com método. Sem solidão.
         </motion.p>
 
         {/* CTAs */}

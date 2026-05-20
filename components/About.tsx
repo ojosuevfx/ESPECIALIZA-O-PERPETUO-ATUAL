@@ -52,12 +52,12 @@ export default function About() {
           <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--color-accent)" }}>A Especialização</span>
 
           <h3 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "32px", lineHeight: "118%", letterSpacing: "-0.025em", color: "var(--color-text-primary)", margin: 0 }}>
-            Um programa de quatro anos para dominar Aristóteles,{" "}
+            Um programa para dominar Aristóteles,{" "}
             <span style={{ color: "var(--color-accent)" }}>com método e sem solidão.</span>
           </h3>
 
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", margin: 0 }}>
-            A Especialização em Aristóteles é um programa de 4 anos para quem quer estudar filosofia tradicional com a profundidade e a estrutura que ela exige — sem precisar de faculdade, sem misturar com modas acadêmicas modernas, e sem estudar sozinho. O currículo segue a ordem clássica do Thomas Aquinas College: Lógica no primeiro ano, Filosofia da Natureza e Psicologia no segundo, Ética e Política no terceiro, Metafísica no quarto.
+            A Especialização em Aristóteles é um programa para quem quer estudar filosofia tradicional com profundidade e estrutura — sem precisar de faculdade, sem estudar sozinho, no seu próprio ritmo. O currículo percorre as grandes áreas do conhecimento filosófico na ordem que a tradição clássica sempre seguiu: Lógica, Filosofia da Natureza, Ética, Política e Metafísica.
           </p>
 
           <Link href="#ingresso" className="btn-cta"

@@ -5,11 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   { q: "Preciso ter estudado filosofia antes?", a: "Não. O programa começa pela Lógica, do zero. Não há pré-requisito de leitura ou formação prévia." },
-  { q: "Como funcionam as aulas?", a: "São semanais, ao vivo, com 90 minutos de duração. Você assiste ao vivo ou depois pela gravação — todo o conteúdo fica disponível para sempre na plataforma." },
   { q: "Qual a diferença entre a Especialização e o Lyceum?", a: "O Lyceum é turma fechada com discussão socrática semanal em pequeno grupo. A Especialização é o mesmo currículo, sem discussão socrática, com mais flexibilidade e ao seu próprio ritmo." },
-  { q: "E se eu não conseguir acompanhar?", a: "Acesso vitalício à gravação. Você volta quando quiser, sem prazo de validade. E tem o Tutor Aquino disponível 24h para tirar dúvidas entre as aulas." },
-  { q: "Quanto tempo por semana eu preciso?", a: "Entre 4 e 6 horas: 1h30 de aula mais 2 a 4 horas de leitura individual." },
-  { q: "Vou precisar comprar livros?", a: "Sim. As edições recomendadas são indicadas aula a aula. O investimento médio é de R$ 50 a R$ 100 por trimestre." },
+  { q: "E se eu não conseguir acompanhar?", a: "Todo o conteúdo fica gravado e disponível na plataforma. Você estuda no seu próprio ritmo, sem prazo de validade." },
   { q: "Tem garantia?", a: "Sim. 7 dias incondicional após o início das aulas. Se não for para você, devolução integral." },
   { q: "O programa é presencial?", a: "Não. É 100% online." },
 ];

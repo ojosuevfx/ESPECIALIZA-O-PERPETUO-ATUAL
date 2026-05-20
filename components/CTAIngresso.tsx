@@ -61,8 +61,8 @@ export default function CTAIngresso() {
             margin: 0,
           }}
         >
-          Garanta sua vaga na{" "}
-          <span style={{ color: "#c8a96e" }}>Turma Fundadora.</span>
+          Aplique agora mesmo para{" "}
+          <span style={{ color: "#c8a96e" }}>fazer parte do programa.</span>
         </motion.h2>
 
         {/* Text */}
@@ -81,7 +81,7 @@ export default function CTAIngresso() {
             maxWidth: "560px",
           }}
         >
-          A Especialização em Aristóteles abre uma vez por ano. As inscrições da Turma Fundadora estão abertas — preencha o formulário e entraremos em contato em até 24 horas.
+          Assim que finalizado, nossa equipe entrará em contato.
         </motion.p>
 
         {/* CTA Button */}
@@ -108,7 +108,7 @@ export default function CTAIngresso() {
             }}
           >
             <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "17px", color: "#0D0F10" }}>
-              Me inscrever
+              Aplicar agora!
             </span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="#0D0F10" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -117,7 +117,7 @@ export default function CTAIngresso() {
 
           {/* Note */}
           <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            {["Turma Fundadora", "Início em agosto de 2026", "Vagas limitadas"].map((item, i, arr) => (
+            {["Turma Fundadora", "Vagas limitadas", "Garantia de 7 dias"].map((item, i, arr) => (
               <span key={i} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "12px", color: "rgba(244,245,246,0.35)", letterSpacing: "0.02em" }}>
                   {item}
