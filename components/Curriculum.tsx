@@ -211,10 +211,10 @@ export default function Curriculum() {
         {/* Left — desce junto com o scroll da seção */}
         <motion.div ref={leftRef} style={{ y: leftY }}>
           <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#c8a96e", display: "block", marginBottom: "20px" }}>
-            O Currículo — Lógica
+            Currículo Geral
           </span>
           <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "34px", lineHeight: "116%", letterSpacing: "-0.025em", color: "#F4F5F6", margin: "0 0 20px" }}>
-            O estudo da Lógica: do começo ao domínio completo do Órganon.
+            Tudo começa pela Lógica.
           </h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "14px", lineHeight: "170%", color: "#8A9AA4", margin: "0 0 24px" }}>
             A Lógica é o ponto de partida de toda a filosofia clássica. Aqui você estuda o Órganon de Aristóteles do início ao fim — a ferramenta fundamental de todo filósofo.
