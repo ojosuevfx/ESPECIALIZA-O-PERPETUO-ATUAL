@@ -69,9 +69,9 @@ export default function Founder() {
           </div>
 
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: 0 }}>
-            Lucca de Tomás estudou por dois anos e meio no{" "}
-            <strong style={{ color: "#F4F5F6", fontWeight: 600 }}>Thomas Aquinas College (EUA)</strong>{" "}
-            — a faculdade católica de great books mais conceituada do mundo. De volta ao Brasil, fundou o Lyceum, programa de estudos socráticos online que hoje conta com mais de 300 alunos ativos.
+            Lucca de Tomás estudou no{" "}
+            <strong style={{ color: "#F4F5F6", fontWeight: 600 }}>Thomas Aquinas College (EUA)</strong>
+            , uma das instituições mais rigorosas do mundo no ensino clássico pelo método socrático. Discípulo da filosofia e teologia de Santo Tomás de Aquino, tem como missão pessoal contribuir para o renascimento cultural brasileiro através da formação intelectual séria. A Especialização em Aristóteles é o fruto direto desse percurso.
           </p>
 
           {/* Quote */}

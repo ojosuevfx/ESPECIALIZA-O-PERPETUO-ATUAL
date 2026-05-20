@@ -21,15 +21,12 @@ function IconLive() {
     </svg>
   );
 }
-function IconAI() {
+function IconPerson() {
   return (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
       <rect width="48" height="48" rx="12" fill="rgba(200,169,110,0.07)" />
-      <rect x="14" y="16" width="20" height="14" rx="3" stroke="#c8a96e" strokeWidth="1.5" />
-      <circle cx="20" cy="23" r="1.5" fill="#c8a96e" opacity="0.7" />
-      <circle cx="28" cy="23" r="1.5" fill="#c8a96e" opacity="0.7" />
-      <path d="M20 33v-3M28 33v-3M24 33v-3" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M20 16v-2M28 16v-2" stroke="#c8a96e" strokeWidth="1.3" strokeLinecap="round" opacity="0.5" />
+      <circle cx="24" cy="18" r="5" stroke="#c8a96e" strokeWidth="1.5" />
+      <path d="M13 35c0-6.075 4.925-11 11-11s11 4.925 11 11" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round" />
     </svg>
   );
 }
@@ -37,7 +34,7 @@ function IconAI() {
 const pillars = [
   { Icon: IconBook, num: "01", title: "Currículo Tradicional", description: "Seguindo a divisão da filosofia clássica estabelecida desde os medievais: Lógica, Filosofia da Natureza, Ética, Política e Metafísica. Uma ordem que não é nossa — é da tradição." },
   { Icon: IconLive, num: "02", title: "Fontes Primárias", description: "Você lê diretamente os textos dos próprios filósofos. Sem resumos, sem intermediários. Todo o material de estudo está incluído e disponível na plataforma." },
-  { Icon: IconAI, num: "03", title: "Um mentor que já percorreu esse caminho", description: "Lucca de Tomás estudou e viveu o currículo que hoje transmite. Você aprende com quem já foi pelo mesmo percurso." },
+  { Icon: IconPerson, num: "03", title: "Um mentor que já percorreu esse caminho", description: "Lucca de Tomás estudou e viveu o currículo que hoje transmite. Você aprende com quem já foi pelo mesmo percurso." },
 ];
 
 export default function Solutions() {
