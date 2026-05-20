@@ -219,11 +219,6 @@ export default function Curriculum() {
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "14px", lineHeight: "170%", color: "#8A9AA4", margin: "0 0 24px" }}>
             A Lógica é o ponto de partida de toda a filosofia clássica. Aqui você estuda o Órganon de Aristóteles do início ao fim — a ferramenta fundamental de todo filósofo.
           </p>
-          <div style={{ padding: "16px 20px", borderRadius: "12px", background: "rgba(200,169,110,0.05)", border: "1px solid rgba(200,169,110,0.10)" }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "13px", lineHeight: "160%", color: "#8A9AA4", margin: 0 }}>
-              O currículo completo está disponível após o ingresso.
-            </p>
-          </div>
         </motion.div>
 
         {/* Right — roadmap */}
