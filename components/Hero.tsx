@@ -114,11 +114,27 @@ export default function Hero() {
           opacity,
         }}
       >
+        {/* Logo */}
+        <motion.div
+          initial={{ opacity: 0, y: -16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+          style={{ marginBottom: "8px" }}
+        >
+          <Image
+            src="/nova-logo.webp"
+            alt="Especialização em Aristóteles"
+            width={96}
+            height={96}
+            style={{ objectFit: "contain", opacity: 0.92 }}
+          />
+        </motion.div>
+
         {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "6px 16px", borderRadius: "200px", border: "1px solid rgba(200,169,110,0.25)", background: "rgba(200,169,110,0.06)" }}
         >
           <motion.span

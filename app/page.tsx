@@ -17,9 +17,9 @@ export default function Home() {
       <SmoothScroll />
       <Navbar />
       <Hero />
+      <Formation />
       <Solutions />
       <About />
-      <Formation />
       <Curriculum />
       <Founder />
       <TurmaFundadora />

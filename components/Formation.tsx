@@ -2,30 +2,32 @@
 
 import { motion } from "framer-motion";
 
-const years = [
+const romans = ["I", "II", "III", "IV"];
+
+const areas = [
   {
-    year: "",
     title: "Lógica",
-    desc: "O instrumento do pensamento. Sem ele, nenhuma outra área da filosofia se sustenta.",
+    desc: "O instrumento do pensamento. Sem ele, nenhuma outra área da filosofia se sustenta ou progride com rigor.",
     topics: ["Categorias — Aristóteles", "Da Interpretação — Aristóteles", "Analíticos Anteriores e Posteriores", "Tópicos e Refutações Sofísticas"],
+    accent: true,
   },
   {
-    year: "",
     title: "Filosofia da Natureza e Psicologia",
-    desc: "Os princípios do mundo natural e da alma humana.",
-    topics: ["Física — Aristóteles", "De Generatione", "De Anima — Aristóteles"],
+    desc: "Os princípios do mundo natural e da alma humana — o fundamento para toda reflexão sobre o ser vivo.",
+    topics: ["Física — Aristóteles", "De Generatione et Corruptione", "De Anima — Aristóteles"],
+    accent: false,
   },
   {
-    year: "",
     title: "Ética e Política",
-    desc: "A vida moral e cívica. O que é uma vida bem vivida e como os homens devem se organizar.",
+    desc: "A vida moral e cívica. O que é uma vida bem vivida e como os homens devem se organizar em comunidade.",
     topics: ["Ética a Nicômaco — Aristóteles", "Política — Aristóteles"],
+    accent: false,
   },
   {
-    year: "",
     title: "Metafísica",
-    desc: "O coroamento. O ser enquanto ser, as primeiras causas, a teologia natural.",
+    desc: "O coroamento de toda a formação. O ser enquanto ser, as causas primeiras e a teologia natural.",
     topics: ["Metafísica — Aristóteles"],
+    accent: true,
   },
 ];
 
@@ -33,76 +35,146 @@ export default function Formation() {
   return (
     <section
       id="formacao"
-      style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%", padding: "120px 0", borderTop: "1px solid rgba(244,245,246,0.06)" }}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "100%",
+        padding: "120px 0",
+        borderTop: "1px solid rgba(244,245,246,0.06)",
+        position: "relative",
+        overflow: "hidden",
+      }}
     >
-      <div className="formation-inner" style={{ width: "1140px" }}>
+      {/* Ambient glow */}
+      <div aria-hidden="true" style={{ position: "absolute", top: 0, left: "50%", transform: "translateX(-50%)", width: "800px", height: "300px", background: "radial-gradient(ellipse, rgba(200,169,110,0.06) 0%, transparent 70%)", filter: "blur(80px)", pointerEvents: "none" }} />
+
+      <div className="formation-inner" style={{ width: "1140px", position: "relative", zIndex: 1 }}>
 
         {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true, margin: "-8%" }}
-          style={{ marginBottom: "72px" }}
+          style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: "48px", marginBottom: "64px" }}
+          className="formation-heading-row"
         >
-          <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-accent)", display: "block", marginBottom: "16px" }}>
-            Currículo
-          </span>
-          <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: "48px" }} className="formation-heading-row">
-            <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "36px", lineHeight: "116%", letterSpacing: "-0.025em", color: "var(--color-text-primary)", margin: 0, maxWidth: "440px" }}>
-              As grandes áreas da filosofia clássica.
+          <div>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-accent)", display: "block", marginBottom: "16px" }}>
+              Currículo
+            </span>
+            <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "38px", lineHeight: "114%", letterSpacing: "-0.025em", color: "var(--color-text-primary)", margin: 0, maxWidth: "440px" }}>
+              As grandes áreas da{" "}
+              <span style={{ color: "var(--color-accent)" }}>filosofia clássica.</span>
             </h2>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "360px", margin: 0, flexShrink: 0 }} className="formation-subtext">
-              Cada área aprofunda a anterior, seguindo a divisão clássica da filosofia tradicional — da Lógica à Metafísica.
-            </p>
           </div>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "340px", margin: 0, flexShrink: 0 }} className="formation-subtext">
+            Cada área aprofunda a anterior, seguindo a divisão clássica da filosofia tradicional — da Lógica à Metafísica.
+          </p>
         </motion.div>
 
-        {/* Curriculum table */}
-        <div style={{ borderTop: "1px solid rgba(244,245,246,0.08)" }}>
-          {years.map((item, i) => (
+        {/* Cards grid */}
+        <div className="formation-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "16px" }}>
+          {areas.map((area, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+              initial={{ opacity: 0, y: 40, filter: "blur(8px)" }}
+              whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
               viewport={{ once: true, margin: "-5%" }}
-              className="formation-row"
+              whileHover={{ y: -6, transition: { duration: 0.25, ease: "easeOut" } }}
               style={{
-                display: "grid",
-                gridTemplateColumns: "120px 1fr 1fr",
-                gap: "48px",
-                padding: "40px 0",
-                borderBottom: "1px solid rgba(244,245,246,0.06)",
-                alignItems: "start",
+                display: "flex",
+                flexDirection: "column",
+                padding: "36px 28px",
+                borderRadius: "20px",
+                background: area.accent
+                  ? "radial-gradient(140% 100% at 50% 0%, #1E2424 0%, #0D1010 100%)"
+                  : "radial-gradient(140% 100% at 50% 0%, #161818 0%, #0D0F10 100%)",
+                border: area.accent
+                  ? "1px solid rgba(200,169,110,0.18)"
+                  : "1px solid rgba(244,245,246,0.07)",
+                position: "relative",
+                overflow: "hidden",
+                cursor: "default",
+                minHeight: "340px",
               }}
             >
-              {/* Year */}
-              <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-                <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--color-accent)", opacity: i === 3 ? 1 : 0.6 }}>
-                  {item.year}
-                </span>
-                <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "40px", color: "rgba(200,169,110,0.05)", lineHeight: "1", marginTop: "4px" }}>
-                  {i + 1}
-                </span>
-              </div>
+              {/* Hover glow */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 50% 0%, rgba(200,169,110,0.08) 0%, transparent 60%)", pointerEvents: "none" }}
+              />
 
-              {/* Title + desc */}
-              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-                <h3 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "20px", lineHeight: "130%", letterSpacing: "-0.01em", color: "var(--color-text-primary)", margin: 0 }}>
-                  {item.title}
-                </h3>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "14px", lineHeight: "170%", color: "var(--color-text-muted)", margin: 0 }}>
-                  {item.desc}
-                </p>
-              </div>
+              {/* Roman numeral */}
+              <span style={{
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontWeight: 800,
+                fontSize: "56px",
+                lineHeight: "1",
+                color: area.accent ? "rgba(200,169,110,0.12)" : "rgba(244,245,246,0.04)",
+                position: "absolute",
+                top: "20px",
+                right: "24px",
+                letterSpacing: "-0.02em",
+                userSelect: "none",
+              }}>
+                {romans[i]}
+              </span>
+
+              {/* Area label */}
+              <span style={{
+                fontFamily: "'Inter', sans-serif",
+                fontWeight: 500,
+                fontSize: "10px",
+                letterSpacing: "0.14em",
+                textTransform: "uppercase",
+                color: "#c8a96e",
+                opacity: 0.7,
+                display: "block",
+                marginBottom: "16px",
+              }}>
+                Área {romans[i]}
+              </span>
+
+              {/* Title */}
+              <h3 style={{
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontWeight: 700,
+                fontSize: "18px",
+                lineHeight: "128%",
+                letterSpacing: "-0.01em",
+                color: "#F4F5F6",
+                margin: "0 0 14px",
+              }}>
+                {area.title}
+              </h3>
+
+              {/* Description */}
+              <p style={{
+                fontFamily: "'Inter', sans-serif",
+                fontWeight: 400,
+                fontSize: "13px",
+                lineHeight: "165%",
+                color: "#8A9AA4",
+                margin: "0 0 24px",
+                flexGrow: 1,
+              }}>
+                {area.desc}
+              </p>
+
+              {/* Divider */}
+              <div style={{ height: "1px", background: area.accent ? "rgba(200,169,110,0.12)" : "rgba(244,245,246,0.06)", marginBottom: "20px" }} />
 
               {/* Topics */}
-              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
-                {item.topics.map((t, j) => (
-                  <li key={j} style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                    <span style={{ width: "4px", height: "4px", borderRadius: "50%", background: "var(--color-accent)", opacity: 0.4, flexShrink: 0 }} />
-                    <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "13px", color: "var(--color-text-muted)", opacity: 0.8 }}>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
+                {area.topics.map((t, j) => (
+                  <li key={j} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
+                    <span style={{ color: "#c8a96e", fontSize: "6px", marginTop: "5px", flexShrink: 0, opacity: 0.5 }}>✦</span>
+                    <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "12px", lineHeight: "155%", color: "rgba(244,245,246,0.5)" }}>
                       {t}
                     </span>
                   </li>
@@ -115,13 +187,9 @@ export default function Formation() {
 
       <style>{`
         @media (max-width: 1199px) { .formation-inner { width: 100% !important; padding: 0 32px !important; } }
-        @media (max-width: 860px) {
-          .formation-heading-row { flex-direction: column !important; align-items: flex-start !important; }
-          .formation-subtext { max-width: 100% !important; }
-          .formation-row { grid-template-columns: 80px 1fr !important; gap: 24px !important; }
-          .formation-row ul { grid-column: 2 !important; }
-        }
-        @media (max-width: 560px) { .formation-inner { padding: 0 20px !important; } .formation-row { grid-template-columns: 1fr !important; } }
+        @media (max-width: 900px) { .formation-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+        @media (max-width: 860px) { .formation-heading-row { flex-direction: column !important; align-items: flex-start !important; } .formation-subtext { max-width: 100% !important; } }
+        @media (max-width: 560px) { .formation-inner { padding: 0 20px !important; } .formation-grid { grid-template-columns: 1fr !important; } }
       `}</style>
     </section>
   );
