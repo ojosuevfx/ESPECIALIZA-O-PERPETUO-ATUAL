@@ -33,10 +33,10 @@ export default function About() {
           style={{ flexShrink: 0, width: "48%", aspectRatio: "4/5", borderRadius: "16px", overflow: "hidden", zIndex: 1, position: "relative" }}
         >
           <Image
-            src="/aristoteles-aura.webp"
+            src="/realaristoteles.webp"
             alt="Aristóteles"
             fill
-            style={{ objectFit: "cover", objectPosition: "80% 30%", transform: "scale(1.25)", transformOrigin: "80% 30%" }}
+            style={{ objectFit: "cover", objectPosition: "50% 15%", transform: "scale(1.05)", transformOrigin: "50% 15%" }}
           />
         </motion.div>
 
