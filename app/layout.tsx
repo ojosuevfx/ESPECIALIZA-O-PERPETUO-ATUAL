@@ -3,9 +3,9 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lyceum — Escola de Filosofia Clássica pelo Método Socrático | Brasil",
+  title: "Especialização em Aristóteles",
   description:
-    "Formação filosófica séria, enraizada nos grandes clássicos e na tradição católica. Método socrático, currículo estruturado de 4 anos, comunidade intelectual real. Vagas limitadas.",
+    "Um programa para dominar a filosofia tradicional com profundidade e estrutura — Lógica, Filosofia da Natureza, Ética, Política e Metafísica. Guiado por Lucca de Tomás. Vagas limitadas.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
