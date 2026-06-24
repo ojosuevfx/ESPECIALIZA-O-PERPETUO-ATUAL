@@ -114,22 +114,6 @@ export default function Hero() {
           opacity,
         }}
       >
-        {/* Logo */}
-        <motion.div
-          initial={{ opacity: 0, y: -16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          style={{ marginBottom: "8px" }}
-        >
-          <Image
-            src="/nova-logo.webp"
-            alt="Especialização em Aristóteles"
-            width={96}
-            height={96}
-            style={{ objectFit: "contain", opacity: 0.92 }}
-          />
-        </motion.div>
-
         {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20, scale: 0.95 }}
@@ -143,7 +127,7 @@ export default function Hero() {
             style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--color-accent)", flexShrink: 0, display: "block" }}
           />
           <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "12px", color: "var(--color-accent)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
-            Turma Fundadora · Abertura 2026
+            Abertura 2026
           </span>
         </motion.div>
 
@@ -204,7 +188,7 @@ export default function Hero() {
           </Link>
 
           <Link
-            href="#lyceum"
+            href="#beneficios"
             style={{
               display: "inline-flex", alignItems: "center", gap: "8px",
               padding: "14px 28px", borderRadius: "200px",
@@ -215,7 +199,7 @@ export default function Hero() {
             onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "var(--color-border-medium)")}
           >
             <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "15px", color: "var(--color-text-primary)" }}>
-              Conhecer o programa
+              Ver meus benefícios
             </span>
           </Link>
         </motion.div>
@@ -231,7 +215,7 @@ export default function Hero() {
           .hero-cta-row { flex-direction: column !important; width: 100% !important; }
           .hero-cta-row a { width: 100% !important; justify-content: center !important; }
           .hero-inner { padding: 60px 24px 100px !important; }
-          .aristoteles-bg { object-position: 45% 28% !important; transform: scale(1.15) !important; transform-origin: 45% 28% !important; filter: blur(2px) !important; }
+          .aristoteles-bg { object-position: 68% 18% !important; transform: scale(1.05) !important; transform-origin: 68% 18% !important; filter: blur(1.5px) !important; }
         }
       `}</style>
     </section>

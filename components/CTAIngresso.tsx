@@ -117,7 +117,7 @@ export default function CTAIngresso() {
 
           {/* Note */}
           <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            {["Turma Fundadora", "Vagas limitadas", "Garantia de 7 dias"].map((item, i, arr) => (
+            {["Vagas limitadas", "Garantia de 7 dias"].map((item, i, arr) => (
               <span key={i} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "12px", color: "rgba(244,245,246,0.35)", letterSpacing: "0.02em" }}>
                   {item}
