@@ -6,8 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqs = [
   { q: "Preciso ter estudado filosofia antes?", a: "Não. O programa começa pela Lógica, do zero. Não há pré-requisito de leitura ou formação prévia." },
   { q: "Qual a diferença entre a Especialização e o Lyceum?", a: "O Lyceum é turma fechada com discussão socrática semanal em pequeno grupo. A Especialização é o mesmo currículo, sem discussão socrática, com mais flexibilidade e ao seu próprio ritmo." },
-  { q: "E se eu não conseguir acompanhar?", a: "Todo o conteúdo fica gravado e disponível na plataforma. Você estuda no seu próprio ritmo, sem prazo de validade." },
-  { q: "Tem garantia?", a: "Sim. 7 dias incondicional após o início das aulas. Se não for para você, devolução integral." },
+  { q: "Como irei acessar as aulas?", a: "As aulas ficam gravadas e disponíveis na plataforma. Você poderá acessar o conteúdo online, assistir no seu próprio ritmo e revisar as aulas sempre que precisar." },
+  { q: "Tem garantia? O acesso é vitalício?", a: "Sim. Você tem 7 dias de garantia incondicional após o início das aulas. Se perceber que o programa não é para você, a devolução é integral. O acesso ao conteúdo não é vitalício: as aulas ficam disponíveis na plataforma por 2 anos." },
   { q: "O programa é presencial?", a: "Não. É 100% online." },
 ];
 
