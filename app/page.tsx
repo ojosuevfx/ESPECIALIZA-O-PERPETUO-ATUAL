@@ -6,6 +6,7 @@ import Formation from "@/components/Formation";
 import Curriculum from "@/components/Curriculum";
 import Founder from "@/components/Founder";
 import TurmaFundadora from "@/components/TurmaFundadora";
+import CTAIngresso from "@/components/CTAIngresso";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
@@ -22,6 +23,7 @@ export default function Home() {
       <Curriculum />
       <Founder />
       <TurmaFundadora />
+      <CTAIngresso />
       <FAQ />
       <Footer />
     </main>

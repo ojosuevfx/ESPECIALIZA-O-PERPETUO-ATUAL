@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const FORM_URL = "#faq";
+const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScfOcyhvfsrSi8M4vTCVpflPRTGN23KXM8At98YoyRJlGoY4w/viewform";
 
 export default function CTAIngresso() {
   return (
@@ -108,7 +108,7 @@ export default function CTAIngresso() {
             }}
           >
             <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "17px", color: "#0D0F10" }}>
-              Inscrições em breve
+              Aplicar agora!
             </span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="#0D0F10" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
