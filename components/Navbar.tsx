@@ -161,7 +161,7 @@ export default function Navbar() {
             >
               <div style={{ width: "60px", height: "1px", background: "rgba(200,169,110,0.25)" }} />
               <Link
-                href="#ingresso"
+                href="#lyceum"
                 onClick={() => setMenuOpen(false)}
                 className="btn-cta"
                 style={{
@@ -176,7 +176,7 @@ export default function Navbar() {
                 }}
               >
                 <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "15px", color: "var(--color-text-on-accent)" }}>
-                  Candidatar-se
+                  Conhecer o curso
                 </span>
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path d="M3 8h10M9 4l4 4-4 4" stroke="var(--color-text-on-accent)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />

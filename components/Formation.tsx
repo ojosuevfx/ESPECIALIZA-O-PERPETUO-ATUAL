@@ -7,8 +7,8 @@ const romans = ["I", "II", "III", "IV"];
 const areas = [
   {
     title: "Lógica",
-    desc: "O instrumento do pensamento. Sem ele, nenhuma outra área da filosofia se sustenta ou progride com rigor.",
-    topics: ["Categorias — Aristóteles", "Da Interpretação — Aristóteles", "Analíticos Anteriores e Posteriores", "Tópicos e Refutações Sofísticas"],
+    desc: "A Lógica deve se antepor às outras partes da Filosofia; porque ensina as regras que a nossa inteligência deve seguir, em toda e qualquer ciência, para alcançar, provar e defender a verdade.",
+    topics: ["Isagoge — Porfírio de Tiro", "Categorias — Aristóteles", "Da Interpretação — Aristóteles", "Analíticos Anteriores — Aristóteles", "Analíticos Posteriores — Aristóteles", "Tópicos e Refutações Sofísticas"],
     accent: true,
   },
   {
@@ -19,13 +19,13 @@ const areas = [
   },
   {
     title: "Ética e Política",
-    desc: "A vida moral e cívica. O que é uma vida bem vivida e como os homens devem se organizar em comunidade.",
+    desc: "Estudo sobre a vida moral e cívica pois é pela consideração do mundo, do homem e de Deus, que chegamos a conhecer o princípio, o fim e a norma dos nossos atos morais.",
     topics: ["Ética a Nicômaco — Aristóteles", "Política — Aristóteles"],
     accent: false,
   },
   {
     title: "Metafísica",
-    desc: "O coroamento de toda a formação. O ser enquanto ser, as causas primeiras e a teologia natural.",
+    desc: "O coroamento de toda a formação intelectual. Trata das primeiras e universalíssimas ideias e propriedades de todas as coisas, e considera os primeiros e supremos princípios de todas as ciências. O ser enquanto ser, as causas primeiras e a teologia natural.",
     topics: ["Metafísica — Aristóteles"],
     accent: true,
   },

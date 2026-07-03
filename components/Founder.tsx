@@ -71,7 +71,7 @@ export default function Founder() {
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: 0 }}>
             Lucca de Tomás estudou no{" "}
             <strong style={{ color: "#F4F5F6", fontWeight: 600 }}>Thomas Aquinas College (EUA)</strong>
-            , uma das instituições mais rigorosas do mundo no ensino clássico pelo método socrático. Discípulo da filosofia e teologia de Santo Tomás de Aquino, tem como missão pessoal contribuir para o renascimento cultural brasileiro através da formação intelectual séria. A Especialização em Aristóteles é o fruto direto desse percurso.
+            , uma das instituições mais rigorosas do mundo no ensino clássico pelo método socrático. Discípulo da filosofia e teologia de Santo Tomás de Aquino, tem como missão pessoal contribuir para o renascimento cultural brasileiro através da formação intelectual séria. A Especialização em Aristóteles é o maior projeto para ensinar a filosofia aristotélica no Brasil, e de forma acessível e segura pretende atingir as pessoas que não puderam aprender isso nas escolas e faculdades brasileiras. Com a experiência de dar aulas para mais de 500 alunos, o Lucca irá transmitir diretamente para você o que faltou na tua formação, e ainda te tornará embasado para regenerar a alta cultura brasileira.
           </p>
 
           {/* Quote */}

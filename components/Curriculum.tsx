@@ -47,7 +47,7 @@ const steps = [
   },
   {
     label: "Analíticos",
-    title: "Analíticos — Aristóteles",
+    title: "Analíticos Anteriores e Analíticos Posteriores — Aristóteles",
     items: [
       "Primeiros — Livro I, cap. 1",
       "Primeiros — Livro I, cap. 2–3",

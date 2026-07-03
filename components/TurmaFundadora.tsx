@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -134,7 +135,8 @@ const benefits = [
   {
     Icon: IconPlatform,
     title: "Acesso à Plataforma Hubla",
-    desc: "Todo o conteúdo das aulas, com qualidade de áudio e imagem, fica disponível na plataforma em até 7 dias.",
+    desc: "Todo o conteúdo das aulas, com qualidade de áudio e imagem, fica disponível na Plataforma Hubla em até 7 dias. A Hubla possui aplicativo para você assistir do celular, onde estiver.",
+    logo: "/hubla-mark.webp",
   },
   {
     Icon: IconFlexibility,
@@ -227,7 +229,7 @@ export default function TurmaFundadora() {
 
           {/* Benefits grid */}
           <div className="tf-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px" }}>
-            {benefits.map(({ Icon, title, desc }, i) => (
+            {benefits.map(({ Icon, title, desc, logo }, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 32, filter: "blur(8px)" }}
@@ -261,8 +263,19 @@ export default function TurmaFundadora() {
                   background: "rgba(200,169,110,0.07)",
                   border: "1px solid rgba(200,169,110,0.15)",
                   display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
+                  overflow: "hidden",
                 }}>
-                  <Icon />
+                  {logo ? (
+                    <Image
+                      src={logo}
+                      alt="Hubla"
+                      width={20}
+                      height={20}
+                      style={{ width: "20px", height: "20px", objectFit: "contain" }}
+                    />
+                  ) : (
+                    <Icon />
+                  )}
                 </div>
 
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>

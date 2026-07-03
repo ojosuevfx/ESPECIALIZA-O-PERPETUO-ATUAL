@@ -57,7 +57,7 @@ export default function About() {
           </h3>
 
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", margin: 0 }}>
-            A Especialização em Aristóteles é um programa para quem quer estudar filosofia tradicional com profundidade e estrutura — sem precisar de faculdade, sem estudar sozinho, no seu próprio ritmo. O currículo percorre as grandes áreas do conhecimento filosófico na ordem que a tradição clássica sempre seguiu: Lógica, Filosofia da Natureza, Ética, Política e Metafísica.
+            A Especialização em Aristóteles é um curso para quem quer estudar filosofia tradicional com profundidade e estrutura: sem precisar de faculdade, porque filosofia se faz aderindo à verdade e sendo transformado por ela; sem estudar sozinho, porque é com o debate de ideias que aprendemos mais; lendo as obras originais do Filósofo, porque é assim que os maiores filósofos estudaram. Tudo isso no seu próprio ritmo: aulas gravadas, suporte e comunidade. O currículo percorre as grandes áreas do conhecimento filosófico na ordem que a tradição clássica sempre seguiu: Lógica, Filosofia da Natureza, Ética, Política e Metafísica.
           </p>
 
           <div style={{
@@ -68,17 +68,17 @@ export default function About() {
             borderLeft: "3px solid rgba(200,169,110,0.5)",
           }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "14px", lineHeight: "165%", color: "var(--color-text-muted)", margin: "0 0 8px", fontStyle: "italic" }}>
-              "Todos os homens têm, por natureza, o desejo de conhecer."
+              "Filosofia, que no sentido etimológico significa amor à sabedoria, pode definir-se: a ciência que trata das causas supremas dos entes, descobertas pela luz natural da razão."
             </p>
             <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: "11px", color: "var(--color-accent)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
-              Aristóteles, Metafísica I, I
+              Definição clássica de filosofia
             </span>
           </div>
 
-          <Link href="#ingresso" className="btn-cta"
+          <Link href="#beneficios" className="btn-cta"
             style={{ display: "inline-flex", alignItems: "center", gap: "10px", padding: "13px 28px", borderRadius: "200px", textDecoration: "none", background: "linear-gradient(90deg, #c8a96e 0%, #e2c98a 100%)", cursor: "pointer", width: "fit-content" }}
           >
-            <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "14px", color: "var(--color-text-on-accent)" }}>Aplicar agora!</span>
+            <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "14px", color: "var(--color-text-on-accent)" }}>Ver benefícios</span>
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="var(--color-text-on-accent)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

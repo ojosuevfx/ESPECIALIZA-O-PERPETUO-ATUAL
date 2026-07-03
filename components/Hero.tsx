@@ -127,16 +127,16 @@ export default function Hero() {
             style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--color-accent)", flexShrink: 0, display: "block" }}
           />
           <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "12px", color: "var(--color-accent)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
-            Abertura 2026
+            Aulas gravadas a partir de 2026
           </span>
         </motion.div>
 
         {/* H1 */}
         <h1 className="hero-h1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, lineHeight: "106%", letterSpacing: "-0.035em", fontSize: "80px", margin: 0 }}>
           {[
-            { text: "Domine a filosofia", gold: false },
-            { text: "tradicional,", gold: false },
-            { text: "pela porta certa.", gold: true },
+            { text: "Estude com método", gold: false },
+            { text: "o Filósofo,", gold: false },
+            { text: "com seriedade e profundidade.", gold: true },
           ].map((line, i) => (
             <motion.span
               key={i}
@@ -158,7 +158,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
           style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "17px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "560px", margin: 0 }}
         >
-          A Especialização em Aristóteles percorre as grandes áreas da filosofia clássica — Lógica, Filosofia da Natureza, Ética, Política e Metafísica — guiada por Lucca de Tomás. Com método. Sem solidão.
+          A Especialização em Aristóteles vai te ensinar a pensar como o maior filósofo pensava. Domine as grandes áreas da filosofia clássica — Lógica, Filosofia da Natureza, Ética, Política e Metafísica — diretamente nas fontes primárias do autor. Estude do jeito certo com Lucca de Tomás, e saia da superficialidade moderna.
         </motion.p>
 
         {/* CTAs */}
@@ -170,36 +170,17 @@ export default function Hero() {
           style={{ display: "flex", gap: "12px", alignItems: "center" }}
         >
           <Link
-            href="#ingresso"
+            href="#lyceum"
             className="btn-cta"
             style={{
-              display: "inline-flex", alignItems: "center", gap: "10px",
+              display: "inline-flex", alignItems: "center", gap: "8px",
               padding: "14px 32px", borderRadius: "200px",
               background: "linear-gradient(90deg, #c8a96e 0%, #e2c98a 100%)",
-              textDecoration: "none",
+              textDecoration: "none", transition: "border-color 180ms ease",
             }}
           >
             <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "15px", color: "var(--color-text-on-accent)" }}>
-              Aplicar agora!
-            </span>
-            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="var(--color-text-on-accent)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Link>
-
-          <Link
-            href="#beneficios"
-            style={{
-              display: "inline-flex", alignItems: "center", gap: "8px",
-              padding: "14px 28px", borderRadius: "200px",
-              border: "1px solid var(--color-border-medium)",
-              textDecoration: "none", transition: "border-color 180ms ease",
-            }}
-            onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "rgba(244,245,246,0.28)")}
-            onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "var(--color-border-medium)")}
-          >
-            <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "15px", color: "var(--color-text-primary)" }}>
-              Ver meus benefícios
+              Conheça mais sobre o curso
             </span>
           </Link>
         </motion.div>

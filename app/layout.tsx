@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Especialização em Aristóteles",
   description:
-    "Um programa para dominar a filosofia tradicional com profundidade e estrutura — Lógica, Filosofia da Natureza, Ética, Política e Metafísica. Guiado por Lucca de Tomás. Vagas limitadas.",
+    "Estude com método o Filósofo, com seriedade e profundidade. Aulas gravadas com Lucca de Tomás a partir de 2026.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

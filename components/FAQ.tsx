@@ -4,11 +4,13 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
-  { q: "Preciso ter estudado filosofia antes?", a: "Não. O programa começa pela Lógica, do zero. Não há pré-requisito de leitura ou formação prévia." },
-  { q: "Qual a diferença entre a Especialização e o Lyceum?", a: "O Lyceum é turma fechada com discussão socrática semanal em pequeno grupo. A Especialização é o mesmo currículo, sem discussão socrática, com mais flexibilidade e ao seu próprio ritmo." },
-  { q: "Como irei acessar as aulas?", a: "As aulas ficam gravadas e disponíveis na plataforma. Você poderá acessar o conteúdo online, assistir no seu próprio ritmo e revisar as aulas sempre que precisar." },
-  { q: "Tem garantia? O acesso é vitalício?", a: "Sim. Você tem 7 dias de garantia incondicional após o início das aulas. Se perceber que o programa não é para você, a devolução é integral. O acesso não é vitalício: a turma fundadora acompanha as gravações ao vivo por uma previsão de 3 anos e, depois de gravadas, você pode acessar as aulas por 2 anos para estudar e revisar no seu tempo." },
+  { q: "Preciso ter estudado filosofia antes?", a: "Não. O programa começa pela lógica aristotélica, base de todo o conhecimento ocidental. Não há pré-requisito de leitura ou formação prévia. Vontade de aprender basta." },
+  { q: "Como irei acessar as aulas?", a: "As aulas ficam gravadas e disponíveis na Plataforma Hubla, que possui aplicativo próprio para celular, em que você pode acessar no ônibus para a faculdade ou no caminho para o trabalho. Poderá assistir no seu próprio ritmo e revisar as aulas sempre que precisar." },
+  { q: "Tem garantia?", a: "Sim. Você tem 7 dias de garantia incondicional após o início das aulas. Se perceber que o programa não é para você, a devolução é integral." },
+  { q: "O acesso é vitalício?", a: "Você acompanhará as aulas gravadas, que serão disponibilizadas na plataforma toda a semana, durante todo o tempo das gravações. Depois de gravada a última aula, prevista para junho de 2029, você poderá acessar a plataforma com as aulas por mais 2 anos, para estudar ou revisar todo o conteúdo, fixando bem todas as partes da obra do Filósofo." },
   { q: "O programa é presencial?", a: "Não. É 100% online." },
+  { q: "É caro?", a: "A Filosofia “é utilíssima para o indivíduo, porque aperfeiçoa as mais nobres faculdades de que o homem é dotado e que são a inteligência e a vontade. Aperfeiçoa a inteligência, elevando-a ao conhecimento das causas supremas dos seres criados e até ao conhecimento do próprio Deus. Aperfeiçoa a vontade, guiando-a, pela prática das virtudes morais, à consecução da felicidade eterna, ainda que na ordem natural.” (Dom Thiago Sinibaldi). Com esse mesmo objetivo final, o curso quer trazer acesso a todos, absolutamente todos, ao domínio dos caminhos para se elevar em virtude, e assim, trazer o benefício da alta cultura a todo o país. Isso tem um custo, mas esse custo é bem menor do que você imagina." },
+  { q: "Quais as formas de pagamento?", a: "Pagamento via PIX ou cartão de crédito. Se ambos não forem possíveis, converse com a nossa equipe e encontraremos um caminho para a sua matrícula nesse grande projeto." },
 ];
 
 function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
@@ -112,7 +114,7 @@ export default function FAQ() {
           fontFamily: "'Inter', sans-serif", fontWeight: 400,
           fontSize: "15px", lineHeight: "165%", color: "#8A9AA4", margin: 0,
         }}>
-          Se sua dúvida não estiver respondida aqui, entre em contato antes de submeter sua candidatura.
+          Se sua dúvida não estiver respondida aqui, entre em contato com a nossa equipe antes da abertura das matrículas.
         </p>
       </motion.div>
 
