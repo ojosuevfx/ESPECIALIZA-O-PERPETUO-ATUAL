@@ -353,7 +353,6 @@ export default function TurmaFundadora() {
                   <div aria-hidden="true" style={{ position: "absolute", inset: 0, background: premium ? "radial-gradient(circle at 16% 0%, rgba(226,201,138,0.16) 0%, transparent 54%)" : "radial-gradient(circle at 16% 0%, rgba(200,169,110,0.08) 0%, transparent 54%)", pointerEvents: "none" }} />
                   {premium && (
                     <>
-                      <div aria-hidden="true" style={{ position: "absolute", right: "-26px", top: "-30px", width: "120px", height: "120px", borderRadius: "50%", border: "1px solid rgba(200,169,110,0.18)", boxShadow: "0 0 70px rgba(200,169,110,0.12)" }} />
                       <div aria-hidden="true" style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: "3px", background: "linear-gradient(to bottom, transparent, #c8a96e, transparent)" }} />
                     </>
                   )}
