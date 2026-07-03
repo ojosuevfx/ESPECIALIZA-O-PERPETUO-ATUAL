@@ -82,7 +82,7 @@ const steps = [
     label: "Dialética",
     title: "Tópicos — Aristóteles",
     items: [
-      "Tópicos, Livros 1–3",
+      "Tópicos, Livros 1 a 3",
     ],
     note: null,
   },
