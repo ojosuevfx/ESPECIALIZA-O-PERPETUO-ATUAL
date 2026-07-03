@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   title: "Especialização em Aristóteles",
   description:
     "Estude com método o Filósofo, com seriedade e profundidade. Aulas gravadas com Lucca de Tomás a partir de 2026.",
+  icons: {
+    icon: [
+      { url: "/favicon.webp", type: "image/webp", sizes: "512x512" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [{ url: "/icon.png", sizes: "512x512", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
