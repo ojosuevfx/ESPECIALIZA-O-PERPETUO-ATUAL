@@ -3,7 +3,33 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScfOcyhvfsrSi8M4vTCVpflPRTGN23KXM8At98YoyRJlGoY4w/viewform";
+const FORM_URL = "https://form.respondi.app/EFUKckil";
+const TRACKING_PARAMS = [
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_content",
+  "utm_term",
+  "utm_id",
+  "fbclid",
+  "gclid",
+  "wbraid",
+  "gbraid",
+];
+
+function appendTrackingParams(baseUrl: string) {
+  if (typeof window === "undefined") return baseUrl;
+
+  const currentParams = new URLSearchParams(window.location.search);
+  const form = new URL(baseUrl);
+
+  TRACKING_PARAMS.forEach((param) => {
+    const value = currentParams.get(param);
+    if (value) form.searchParams.set(param, value);
+  });
+
+  return form.toString();
+}
 
 export default function CTAIngresso() {
   return (
@@ -61,8 +87,8 @@ export default function CTAIngresso() {
             margin: 0,
           }}
         >
-          Aplique agora mesmo para{" "}
-          <span style={{ color: "#c8a96e" }}>fazer parte do programa.</span>
+          Pare de tentar sozinho. Estude com método.{" "}
+          <span style={{ color: "#c8a96e" }}>Estude como estudam os grandes.</span>
         </motion.h2>
 
         {/* Text */}
@@ -81,7 +107,7 @@ export default function CTAIngresso() {
             maxWidth: "560px",
           }}
         >
-          Assim que finalizado, nossa equipe entrará em contato.
+          Você já tentou por conta própria e sabe onde isso vai dar: entusiasmo por uma semana, frustração na semana seguinte e mais um ano desperdiçado por falta de método, de um caminho claro a ser seguido. A Especialização em Aristóteles é o caminho para estudar filosofia clássica do jeito certo, direto das fontes primárias, na ordem certa e com um mestre acompanhando cada passo.
         </motion.p>
 
         {/* CTA Button */}
@@ -97,6 +123,9 @@ export default function CTAIngresso() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-cta"
+            onClick={(event) => {
+              event.currentTarget.href = appendTrackingParams(FORM_URL);
+            }}
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -108,7 +137,7 @@ export default function CTAIngresso() {
             }}
           >
             <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "17px", color: "#0D0F10" }}>
-              Aplicar agora!
+              Quero entrar na Especialização
             </span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="#0D0F10" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />

@@ -5,28 +5,28 @@ import { motion } from "framer-motion";
 const items = [
   {
     n: "01",
-    title: "Aulas semanais ao vivo",
-    desc: "Conduzidas por Lucca de Tomás, com 90 minutos de duração. Você assiste ao vivo ou depois pela gravação.",
+    title: "Você lê antes da aula",
+    desc: "O aluno chega ao encontro com contato prévio com o texto, preparado para acompanhar a discussão e participar melhor.",
   },
   {
     n: "02",
-    title: "Gravações vitalícias",
-    desc: "Todo o conteúdo gravado fica disponível para sempre na plataforma. Sem prazo de validade.",
+    title: "A discussão é guiada pelo Lucca",
+    desc: "A aula percorre o raciocínio do filósofo com direção, perguntas e retomadas, para transformar leitura difícil em compreensão sólida.",
   },
   {
     n: "03",
-    title: "Tira-dúvidas mensal com Lucca",
-    desc: "Uma vez por mês, encontro exclusivo ao vivo para aprofundar o que foi estudado.",
+    title: "Informação vira conhecimento",
+    desc: "Explicar um ponto, ouvir outro aluno e retornar ao texto torna a assimilação muito mais profunda do que assistir passivamente.",
   },
   {
     n: "04",
-    title: "Tutor Aquino 24h",
-    desc: "Assistente de IA treinado nos comentários de Santo Tomás às obras de Aristóteles. Disponível a qualquer hora para tirar suas dúvidas entre as aulas.",
+    title: "Você dialoga com o próprio filósofo",
+    desc: "O centro não é um resumo ou intermediário, mas o texto original bem conduzido, para que você deixe de depender de frases prontas.",
   },
   {
     n: "05",
-    title: "Comunidade fechada",
-    desc: "Um ambiente de pessoas comprometidas com o mesmo percurso intelectual, para além das aulas.",
+    title: "Você revisa no seu ritmo",
+    desc: "As aulas ficam gravadas na plataforma, para que você possa retomar os pontos difíceis quantas vezes precisar.",
   },
 ];
 
@@ -47,15 +47,12 @@ export default function HowItWorks() {
           className="how-heading-row"
         >
           <div>
-            <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-accent)", display: "block", marginBottom: "16px" }}>
-              O Programa
-            </span>
             <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "36px", lineHeight: "116%", letterSpacing: "-0.025em", color: "var(--color-text-primary)", margin: 0, maxWidth: "420px" }}>
-              Como a Especialização funciona na prática.
+              Não é um curso para assistir passivamente.
             </h2>
           </div>
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "380px", margin: 0, flexShrink: 0 }} className="how-subtext">
-            Cada elemento existe para garantir que o estudo aconteça com rigor e continuidade — ao seu ritmo.
+            Na maioria dos cursos, o professor fala por uma hora e meia e o aluno esquece quase tudo depois. Na Especialização, a aula é uma discussão guiada: você lê, participa e percorre o raciocínio do filósofo até compreender com profundidade o que ele queria dizer.
           </p>
         </motion.div>
 

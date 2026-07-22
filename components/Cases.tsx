@@ -5,64 +5,40 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    text: "Nunca imaginei que filosofia pudesse ser assim. Não um professor falando, mas todos nós pensando juntos. O método socrático muda tudo.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
-    name: "Rafael Mendonça",
-    role: "Engenheiro, São Paulo",
+    text: "Sempre quis estudar filosofia, mas, quando começava por conta própria, animava uma semana e logo me frustrava, e isso durante anos. Comecei faz 1 mês e parece um ano, de tanta coisa que a gente vê.",
+    initials: "",
+    name: "Aluno do Lyceum",
+    role: "Depoimento",
   },
   {
-    text: "Entrei sem saber nada de filosofia formal. Saí do primeiro módulo com uma clareza de pensamento que não tinha em anos de leitura solitária.",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
-    name: "Mariana Costa",
-    role: "Advogada, Belo Horizonte",
+    text: "Eu estava procurando há 4 anos uma ordem no conhecimento de Aristóteles e não encontrava. Ter encontrado o Lyceum me deu a paz de saber que finalmente achei esse lugar.",
+    initials: "",
+    name: "Aluno do Lyceum",
+    role: "Depoimento",
   },
   {
-    text: "A comunidade é o que mais me surpreendeu. Pessoas sérias, comprometidas, que levam o texto a sério. Não encontro isso em nenhum outro lugar.",
-    image: "https://randomuser.me/api/portraits/men/55.jpg",
-    name: "Lucas Ferreira",
-    role: "Médico, Curitiba",
+    text: "Em apenas um ano, aprendi mais sobre filosofia clássica do que em toda a minha vida.",
+    initials: "",
+    name: "Aluno do Lyceum",
+    role: "Depoimento",
   },
   {
-    text: "Ler Aristóteles com guia e discussão é completamente diferente de ler sozinho. O Lyceum me deu ferramentas para pensar que levarei para sempre.",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
-    name: "Ana Paula Rocha",
-    role: "Professora, Porto Alegre",
+    text: "As obras antes pareciam quase indecifráveis. Só de acompanhar as discussões, notei uma diferença muito significativa na minha compreensão.",
+    initials: "",
+    name: "Aluno do Lyceum",
+    role: "Depoimento",
   },
   {
-    text: "O processo seletivo me assustou no início. Mas é exatamente isso que garante o nível da turma. Vale cada etapa.",
-    image: "https://randomuser.me/api/portraits/men/12.jpg",
-    name: "Tiago Alves",
-    role: "Empreendedor, Rio de Janeiro",
-  },
-  {
-    text: "Finalmente encontrei um ambiente intelectual à altura do que eu procurava. Santo Tomás de Aquino ganhou vida para mim aqui.",
-    image: "https://randomuser.me/api/portraits/women/23.jpg",
-    name: "Beatriz Lima",
-    role: "Jornalista, Brasília",
-  },
-  {
-    text: "Cada encontro semanal é um exercício real de raciocínio. Não há como ser passivo. E isso é exatamente o que eu precisava.",
-    image: "https://randomuser.me/api/portraits/men/76.jpg",
-    name: "Pedro Carvalho",
-    role: "Arquiteto, Recife",
-  },
-  {
-    text: "Minha fé ficou mais sólida e meu pensamento mais claro. O Lyceum une o rigor intelectual com a tradição que eu amo.",
-    image: "https://randomuser.me/api/portraits/women/90.jpg",
-    name: "Fernanda Souza",
-    role: "Pesquisadora, Fortaleza",
-  },
-  {
-    text: "Aprendi mais nos primeiros três meses do Lyceum do que em dois anos de podcasts e livros de divulgação filosófica.",
-    image: "https://randomuser.me/api/portraits/men/47.jpg",
-    name: "Gustavo Nunes",
-    role: "Analista, Florianópolis",
+    text: "Sou professor e tenho dado aulas melhores graças ao Lyceum. Em nenhum outro curso você conhece as coisas de fato.",
+    initials: "",
+    name: "Aluno do Lyceum",
+    role: "Depoimento",
   },
 ];
 
-const firstColumn = testimonials.slice(0, 3);
-const secondColumn = testimonials.slice(3, 6);
-const thirdColumn = testimonials.slice(6, 9);
+const firstColumn = testimonials.slice(0, 2);
+const secondColumn = testimonials.slice(2, 4);
+const thirdColumn = testimonials.slice(4, 5);
 
 function TestimonialsColumn({ items, duration = 15 }: { items: typeof testimonials; duration?: number }) {
   return (
@@ -88,15 +64,12 @@ function TestimonialsColumn({ items, duration = 15 }: { items: typeof testimonia
                 }}
               >
                 <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "14px", lineHeight: "170%", color: "#8A9AA4", margin: 0 }}>
-                  "{t.text}"
+                  {t.text}
                 </p>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", borderTop: "1px solid rgba(244,245,246,0.07)", paddingTop: "16px" }}>
-                  <img
-                    src={t.image}
-                    alt={t.name}
-                    width={36}
-                    height={36}
-                    style={{ width: "36px", height: "36px", borderRadius: "50%", objectFit: "cover", flexShrink: 0 }}
+                  <div
+                    aria-label="Espaço reservado para foto do aluno"
+                    style={{ width: "36px", height: "36px", borderRadius: "50%", flexShrink: 0, border: "1px dashed rgba(200,169,110,0.32)", background: "rgba(200,169,110,0.06)" }}
                   />
                   <div>
                     <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600, fontSize: "13px", color: "#F4F5F6", margin: "0 0 2px", lineHeight: "1.3" }}>{t.name}</p>
@@ -126,11 +99,11 @@ export default function Cases() {
         viewport={{ once: true }}
         style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "12px", maxWidth: "540px", textAlign: "center", marginBottom: "64px", padding: "0 24px" }}
       >
-        <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "4px 14px", borderRadius: "200px", border: "1px solid rgba(200,169,110,0.2)", background: "rgba(200,169,110,0.05)" }}>
-          <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.1em", textTransform: "uppercase", color: "#c8a96e" }}>Alumni</span>
-        </div>
+        <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "40px", lineHeight: "114%", letterSpacing: "-0.025em", color: "#F4F5F6", margin: 0 }}>
+          Depoimentos
+        </h2>
         <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "165%", color: "#8A9AA4", margin: 0 }}>
-          Relatos de alunos sobre sua experiência na formação filosófica do Lyceum.
+          Relatos de alunos sobre o que muda quando existe ordem, texto e discussão guiada.
         </p>
       </motion.div>
 

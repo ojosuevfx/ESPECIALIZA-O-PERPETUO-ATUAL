@@ -6,8 +6,9 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
+  { label: "Curso", href: "#lyceum" },
   { label: "Currículo", href: "#curriculo" },
-  { label: "Mentor", href: "#fundador" },
+  { label: "Benefícios", href: "#beneficios" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -77,6 +78,7 @@ export default function Navbar() {
                 alt="Lyceum"
                 width={140}
                 height={140}
+                className="nav-logo-image"
                 style={{ objectFit: "contain", height: "140px", width: "140px", display: "block" }}
               />
             </motion.div>
@@ -186,6 +188,11 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
+      <style>{`
+        @media (max-width: 640px) {
+          .nav-logo-image { width: 82px !important; height: 82px !important; }
+        }
+      `}</style>
     </>
   );
 }

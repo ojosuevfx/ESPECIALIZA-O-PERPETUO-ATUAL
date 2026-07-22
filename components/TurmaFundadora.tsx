@@ -29,23 +29,6 @@ function IconSummary() {
     </svg>
   );
 }
-function IconScroll() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M7 5c0-.828.672-1.5 1.5-1.5H18A1.5 1.5 0 0119.5 5v13a1.5 1.5 0 01-1.5 1.5H9A1.5 1.5 0 017.5 18" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M7.5 6H6A1.5 1.5 0 004.5 7.5v9A1.5 1.5 0 006 18h3" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round" opacity="0.4" />
-      <path d="M10.5 9h6M10.5 12h4" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
-function IconClock() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <circle cx="12" cy="12" r="8" stroke="#c8a96e" strokeWidth="1.5" />
-      <path d="M12 7v5l3 2.5" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
 function IconCommunity() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -53,16 +36,6 @@ function IconCommunity() {
       <circle cx="17" cy="8" r="3.5" stroke="#c8a96e" strokeWidth="1.5" opacity="0.45" />
       <path d="M3 19c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round" />
       <path d="M17 13c1.657 0 3 1.343 3 3" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round" opacity="0.45" />
-    </svg>
-  );
-}
-function IconAI() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <rect x="5" y="7" width="14" height="10" rx="2.5" stroke="#c8a96e" strokeWidth="1.5" />
-      <circle cx="9.5" cy="12" r="1.5" fill="#c8a96e" opacity="0.7" />
-      <circle cx="14.5" cy="12" r="1.5" fill="#c8a96e" opacity="0.7" />
-      <path d="M9.5 7V5M14.5 7V5M12 17v2M9 19h6" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round" opacity="0.45" />
     </svg>
   );
 }
@@ -114,49 +87,39 @@ function IconStar() {
 const benefits = [
   {
     Icon: IconTranslation,
-    title: "Traduções próprias",
-    desc: "Todas as obras do currículo traduzidas para o português, com vocabulário filosófico preciso: material editado e revisado para você compreender melhor. Pode imprimir se preferir!",
+    title: "Obras traduzidas pelo próprio Lucca",
+    desc: "Você não precisa comprar nenhum livro. As obras do currículo ficam disponíveis em tradução preparada para o estudo.",
   },
   {
-    Icon: IconGuide,
-    title: "Guia de estudos",
-    desc: "Um método claro para cada obra: o que ler, como ler e o que prestar atenção antes de cada aula semanal.",
+    Icon: IconFlexibility,
+    title: "6 anos de acesso no total",
+    desc: "São 4 anos de formação completa e mais 2 anos de acesso às gravações para revisar todo o conteúdo com calma.",
   },
   {
     Icon: IconSummary,
-    title: "Resumos e materiais de apoio",
-    desc: "Sínteses das aulas e materiais de fixação para consolidar e exercitar cada etapa do currículo.",
+    title: "Aulas com discussão guiada",
+    desc: "Acompanhe as aulas sendo gravadas, participe da discussão e revise as gravações quantas vezes quiser.",
   },
   {
-    Icon: IconScroll,
-    title: "Manuais complementares",
-    desc: "Materiais elaborados pelo próprio Lucca para aprofundar temas difíceis e pontos centrais de cada obra.",
+    Icon: IconGuide,
+    title: "Materiais de estudo",
+    desc: "Guias de estudo, resumos, manuais e materiais de apoio para cada etapa do currículo.",
   },
   {
     Icon: IconPlatform,
     title: "Acesso à Plataforma Hubla",
-    desc: "Todo o conteúdo das aulas, com qualidade de áudio e imagem, fica disponível na Plataforma Hubla em até 7 dias. A Hubla possui aplicativo para você assistir do celular, onde estiver.",
+    desc: "Todo o conteúdo das aulas fica disponível na plataforma, com aplicativo para assistir do celular onde estiver.",
     logo: "/hubla-mark.webp",
   },
   {
-    Icon: IconFlexibility,
-    title: "Tempo e flexibilidade",
-    desc: "Vou conseguir assistir todas as aulas? Fique tranquilo: quando terminarem as gravações, você ainda poderá assistir às aulas por dois anos. Você estuda no seu ritmo, sem correria.",
-  },
-  {
     Icon: IconCommunity,
-    title: "Comunidade de membros",
-    desc: "Um grupo exclusivo de alunos que também estudam e aprendem contigo, para troca de ideias, informações, debate e suporte mútuo.",
-  },
-  {
-    Icon: IconAI,
-    title: "Assistente IA (beta)",
-    desc: "Uma ferramenta de IA integrada à plataforma para tirar dúvidas pontuais entre as aulas.",
+    title: "Comunidade com os alunos",
+    desc: "Esqueça a solidão: você estuda com pessoas que estão atravessando o mesmo percurso intelectual.",
   },
   {
     Icon: IconSupport,
-    title: "Suporte diário e tutoria",
-    desc: "Canal de suporte ativo todos os dias e sessão mensal de tutoria ao vivo com Lucca de Tomás.",
+    title: "Suporte diário e tutoria mensal",
+    desc: "Canal de suporte ativo todos os dias e sessão mensal de tutoria diretamente com Lucca de Tomás.",
   },
 ];
 
@@ -219,11 +182,11 @@ export default function TurmaFundadora() {
             style={{ textAlign: "center", marginBottom: "72px" }}
           >
             <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "40px", lineHeight: "114%", letterSpacing: "-0.025em", color: "#F4F5F6", margin: "0 0 20px" }}>
-              Benefícios ao estudar do{" "}
-              <span style={{ color: "#c8a96e", fontStyle: "italic" }}>jeito certo.</span>
+              Tudo que você recebe entrando hoje{" "}
+              <span style={{ color: "#c8a96e", fontStyle: "italic" }}>na Especialização.</span>
             </h2>
             <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: "0 auto", maxWidth: "680px" }}>
-              Além de estudar seriamente a filosofia aristotélica, seguindo a divisão clássica da filosofia tradicional, acompanhará as aulas enquanto elas estão sendo gravadas, tudo dentro da Plataforma exclusiva para os alunos da Especialização.
+              Além de estudar seriamente a filosofia aristotélica, você recebe materiais, acesso, comunidade e acompanhamento para atravessar o percurso sem estudar sozinho.
             </p>
           </motion.div>
 

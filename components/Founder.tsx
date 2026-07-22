@@ -59,19 +59,20 @@ export default function Founder() {
           style={{ display: "flex", flexDirection: "column", gap: "28px" }}
         >
           <div>
-            <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#c8a96e", display: "block", marginBottom: "16px" }}>
-              Quem será seu mentor
-            </span>
             <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "34px", lineHeight: "116%", letterSpacing: "-0.025em", color: "#F4F5F6", margin: 0 }}>
-              Você não vai estudar sozinho, mas com alguém que já{" "}
-              <span style={{ color: "#c8a96e" }}>percorreu esse caminho.</span>
+              Conheça o professor que vai{" "}
+              <span style={{ color: "#c8a96e" }}>guiar o seu percurso.</span>
             </h2>
           </div>
 
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: 0 }}>
-            Lucca de Tomás estudou no{" "}
+            Lucca de Tomás é professor, tradutor e fundador do Lyceum. Estudou no{" "}
             <strong style={{ color: "#F4F5F6", fontWeight: 600 }}>Thomas Aquinas College (EUA)</strong>
-            , uma das instituições mais rigorosas do mundo no ensino clássico pelo método socrático. Discípulo da filosofia e teologia de Santo Tomás de Aquino, tem como missão pessoal contribuir para o renascimento cultural brasileiro através da formação intelectual séria. A Especialização em Aristóteles é o maior projeto para ensinar a filosofia aristotélica no Brasil, e de forma acessível e segura pretende atingir as pessoas que não puderam aprender isso nas escolas e faculdades brasileiras. Com a experiência de dar aulas para mais de 500 alunos, o Lucca irá transmitir diretamente para você o que faltou na tua formação, e ainda te tornará embasado para regenerar a alta cultura brasileira.
+            , uma das instituições mais rigorosas do mundo no ensino clássico. Ele traduz as obras do currículo diretamente do latim de Boécio e de traduções que trouxe dos seus próprios professores, para você não depender das edições ruins que circulam atualmente no Brasil.
+          </p>
+
+          <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: 0 }}>
+            Mais do que um professor, ele é o guia que faltava: alguém que já percorreu o caminho e conduz a discussão para que você chegue à verdade, em vez de receber respostas prontas para decorar. Com experiência de aulas para mais de 500 alunos, Lucca irá transmitir diretamente o que faltou na sua formação intelectual.
           </p>
 
           {/* Quote */}
@@ -83,7 +84,7 @@ export default function Founder() {
             borderLeft: "3px solid rgba(200,169,110,0.6)",
           }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: "0 0 10px", fontStyle: "italic" }}>
-              "De todas as coisas, a mais desejável é a sabedoria."
+              De todas as coisas, a mais desejável é a sabedoria.
             </p>
             <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: "12px", color: "#c8a96e", letterSpacing: "0.04em", textTransform: "uppercase" }}>
               Hugo de São Vítor, Didascalicon

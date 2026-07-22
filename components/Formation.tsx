@@ -6,27 +6,27 @@ const romans = ["I", "II", "III", "IV"];
 
 const areas = [
   {
-    title: "Lógica",
-    desc: "A Lógica deve se antepor às outras partes da Filosofia; porque ensina as regras que a nossa inteligência deve seguir, em toda e qualquer ciência, para alcançar, provar e defender a verdade.",
-    topics: ["Isagoge — Porfírio de Tiro", "Categorias — Aristóteles", "Da Interpretação — Aristóteles", "Analíticos Anteriores — Aristóteles", "Analíticos Posteriores — Aristóteles", "Tópicos e Refutações Sofísticas"],
+    title: "Ano I — Lógica",
+    desc: "Você aprende a pensar. Dos 5 predicáveis ao Órganon de Aristóteles, até a argumentação: o que é um silogismo válido, como nascem as falácias e como se conhece a verdade das premissas.",
+    topics: ["Filosofia da Razão", "Órganon", "Silogismo e demonstração"],
     accent: true,
   },
   {
-    title: "Filosofia da Natureza e Psicologia",
-    desc: "Os princípios do mundo natural e da alma humana — o fundamento para toda reflexão sobre o ser vivo.",
-    topics: ["Física — Aristóteles", "De Generatione et Corruptione", "De Anima — Aristóteles"],
+    title: "Ano II — Física e Psicologia",
+    desc: "O estudo da natureza e da alma. Você avança para os princípios da realidade física, da vida, da sensação e do conhecimento sensível.",
+    topics: ["Física", "De Anima", "Natureza e alma"],
     accent: false,
   },
   {
-    title: "Ética e Política",
-    desc: "Estudo sobre a vida moral e cívica pois é pela consideração do mundo, do homem e de Deus, que chegamos a conhecer o princípio, o fim e a norma dos nossos atos morais.",
-    topics: ["Ética a Nicômaco — Aristóteles", "Política — Aristóteles"],
+    title: "Ano III — Ética e Política",
+    desc: "Como viver bem e como viver em sociedade. O estudo da felicidade, das virtudes, da prudência, da amizade e da vida comum.",
+    topics: ["Ética a Nicômaco", "Política", "Virtude e vida comum"],
     accent: false,
   },
   {
-    title: "Metafísica",
-    desc: "O coroamento de toda a formação intelectual. Trata das primeiras e universalíssimas ideias e propriedades de todas as coisas, e considera os primeiros e supremos princípios de todas as ciências. O ser enquanto ser, as causas primeiras e a teologia natural.",
-    topics: ["Metafísica — Aristóteles"],
+    title: "Ano IV — Metafísica",
+    desc: "O ápice da formação. A pergunta sobre o ser enquanto ser, as causas primeiras e os princípios mais elevados de todas as ciências.",
+    topics: ["Metafísica", "Ser enquanto ser", "Causas primeiras"],
     accent: true,
   },
 ];
@@ -61,16 +61,13 @@ export default function Formation() {
           className="formation-heading-row"
         >
           <div>
-            <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-accent)", display: "block", marginBottom: "16px" }}>
-              Currículo
-            </span>
             <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "38px", lineHeight: "114%", letterSpacing: "-0.025em", color: "var(--color-text-primary)", margin: 0, maxWidth: "440px" }}>
-              As grandes áreas da{" "}
-              <span style={{ color: "var(--color-accent)" }}>filosofia clássica.</span>
+              Uma formação completa, das bases do pensamento aos{" "}
+              <span style={{ color: "var(--color-accent)" }}>patamares mais elevados da metafísica.</span>
             </h2>
           </div>
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "340px", margin: 0, flexShrink: 0 }} className="formation-subtext">
-            Cada área aprofunda a anterior, seguindo a divisão clássica da filosofia tradicional — da Lógica à Metafísica.
+            A Especialização segue a divisão tradicional das disciplinas, na ordem em que a filosofia clássica sempre foi estudada. São 4 anos de formação.
           </p>
         </motion.div>
 

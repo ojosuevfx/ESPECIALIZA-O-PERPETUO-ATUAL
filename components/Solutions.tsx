@@ -50,7 +50,6 @@ export default function Solutions() {
         viewport={{ once: true, margin: "-10%" }}
         style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px", maxWidth: "640px", textAlign: "center" }}
       >
-        <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#c8a96e" }}>Metodologia</span>
         <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "40px", lineHeight: "114%", letterSpacing: "-0.025em", margin: 0 }}>
           <span style={{ color: "#F4F5F6" }}>Três pilares de uma formação </span>
           <span style={{ color: "#c8a96e" }}>filosófica séria.</span>

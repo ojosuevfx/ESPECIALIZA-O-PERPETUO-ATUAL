@@ -3,19 +3,17 @@
 import { motion } from "framer-motion";
 
 const isFor = [
-  { text: "Você é católico e quer entender sua fé com profundidade filosófica" },
-  { text: "Você ama leitura e quer ir além do que os algoritmos recomendam" },
-  { text: "Está cansado de opiniões sem fundamento e quer aprender a argumentar" },
-  { text: "Nunca estudou filosofia formalmente e quer começar do jeito certo" },
-  { text: "Já tem contato com filosofia e quer estrutura e interlocutores à altura" },
-  { text: "Busca uma comunidade séria para discutir ideias de verdade" },
+  { text: "Você tem sede da verdade e quer conhecer as fontes primárias com profundidade" },
+  { text: "Você quer aprender a pensar, não decorar máximas soltas para repetir por aí" },
+  { text: "Você quer estudar filosofia com método, na ordem correta, com um professor te guiando em cada passo" },
+  { text: "Você quer uma base sólida para se aprofundar, no futuro, na teologia, na sua fé ou no seu trabalho como professor/catequista" },
 ];
 
 const isNotFor = [
-  { text: "Você busca certificado ou diploma" },
-  { text: "Quer conteúdo fácil e resumos prontos" },
-  { text: "Não está disposto a ler os textos originais" },
-  { text: "Não pode comparecer aos encontros semanais" },
+  { text: "Você quer moleza, conteúdo mastigado e uma noção superficial" },
+  { text: "Você quer decorar frases de efeito para citar em conversas" },
+  { text: "Você não está disposto a estudar" },
+  { text: "Você quer atalhos em vez de estudar seriamente" },
 ];
 
 export default function ForWho() {
@@ -52,7 +50,7 @@ export default function ForWho() {
                 <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#c8a96e" }}>Para quem é</span>
               </div>
               <h3 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "26px", lineHeight: "120%", letterSpacing: "-0.02em", color: "#F4F5F6", margin: 0 }}>
-                O Lyceum foi feito para você, se...
+                A Especialização é para você se...
               </h3>
             </div>
 
@@ -120,7 +118,7 @@ export default function ForWho() {
             {/* Disclaimer */}
             <div style={{ marginTop: "auto", paddingTop: "28px", borderTop: "1px solid rgba(244,245,246,0.05)" }}>
               <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "13px", lineHeight: "160%", color: "#3A4A54", margin: 0 }}>
-                Somos uma escola de exigência intelectual. Nosso processo seletivo existe para garantir que cada aluno contribua com o ambiente de aprendizado.
+                A proposta é exigente porque o objetivo não é entretenimento intelectual, mas formação real.
               </p>
             </div>
           </div>

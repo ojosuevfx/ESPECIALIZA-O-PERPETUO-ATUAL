@@ -49,15 +49,17 @@ export default function About() {
           viewport={{ once: true, margin: "-8%" }}
           style={{ display: "flex", flexDirection: "column", gap: "28px", width: "44%", zIndex: 1 }}
         >
-          <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--color-accent)" }}>A Especialização</span>
-
           <h3 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "32px", lineHeight: "118%", letterSpacing: "-0.025em", color: "var(--color-text-primary)", margin: 0 }}>
-            Um programa para dominar Aristóteles,{" "}
-            <span style={{ color: "var(--color-accent)" }}>com método e sem solidão.</span>
+            O que é a Especialização em{" "}
+            <span style={{ color: "var(--color-accent)" }}>Aristóteles.</span>
           </h3>
 
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", margin: 0 }}>
-            A Especialização em Aristóteles é um curso para quem quer estudar filosofia tradicional com profundidade e estrutura: sem precisar de faculdade, porque filosofia se faz aderindo à verdade e sendo transformado por ela; sem estudar sozinho, porque é com o debate de ideias que aprendemos mais; lendo as obras originais do Filósofo, porque é assim que os maiores filósofos estudaram. Tudo isso no seu próprio ritmo: aulas gravadas, suporte e comunidade. O currículo percorre as grandes áreas do conhecimento filosófico na ordem que a tradição clássica sempre seguiu: Lógica, Filosofia da Natureza, Ética, Política e Metafísica.
+            É o maior projeto online de ensino aristotélico em língua portuguesa do mundo, onde você passará por uma formação clássica completa, desde as bases da lógica ao ápice da metafísica, trilhando o caminho que universidades clássicas renomadas, como o Thomas Aquinas College, trilham.
+          </p>
+
+          <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", margin: 0 }}>
+            Aqui você não vai ouvir uma opinião sobre Aristóteles. Você vai ler Aristóteles a partir dos textos originais do filósofo, em um nível de compreensão extremamente profundo. Você não vai decorar que existem 5 predicáveis e 10 categorias &quot;porque sim&quot;: vai entender por que isso é verdade, refazendo o raciocínio com as próprias mãos e pensando por conta própria.
           </p>
 
           <div style={{
@@ -68,7 +70,7 @@ export default function About() {
             borderLeft: "3px solid rgba(200,169,110,0.5)",
           }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "14px", lineHeight: "165%", color: "var(--color-text-muted)", margin: "0 0 8px", fontStyle: "italic" }}>
-              "Filosofia, que no sentido etimológico significa amor à sabedoria, pode definir-se: a ciência que trata das causas supremas dos entes, descobertas pela luz natural da razão."
+              Filosofia, que no sentido etimológico significa amor à sabedoria, pode definir-se: a ciência que trata das causas supremas dos entes, descobertas pela luz natural da razão.
             </p>
             <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: "11px", color: "var(--color-accent)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
               Definição clássica de filosofia

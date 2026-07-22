@@ -127,26 +127,29 @@ export default function Hero() {
             style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--color-accent)", flexShrink: 0, display: "block" }}
           />
           <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "12px", color: "var(--color-accent)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
-            Aulas gravadas a partir de 2026
+            Especialização em Aristóteles
           </span>
         </motion.div>
 
         {/* H1 */}
         <h1 className="hero-h1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, lineHeight: "106%", letterSpacing: "-0.035em", fontSize: "80px", margin: 0 }}>
           {[
-            { text: "Estude com método", gold: false },
-            { text: "o Filósofo,", gold: false },
-            { text: "com seriedade e profundidade.", gold: true },
+            { text: "Pare de estudar filosofia", gold: false, breakAfter: true },
+            { text: "sozinho, ", gold: false, breakAfter: false },
+            { text: "na ordem errada", gold: true, breakAfter: true },
+            { text: "e entendendo tudo pela metade.", gold: false },
           ].map((line, i) => (
-            <motion.span
-              key={i}
-              initial={{ opacity: 0, y: 48, filter: "blur(8px)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              transition={{ duration: 0.8, delay: 0.2 + i * 0.15, ease: [0.16, 1, 0.3, 1] }}
-              style={{ color: line.gold ? "var(--color-accent)" : "var(--color-text-primary)", display: "block" }}
-            >
-              {line.text}
-            </motion.span>
+            <span key={i}>
+              <motion.span
+                initial={{ opacity: 0, y: 48, filter: "blur(8px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                transition={{ duration: 0.8, delay: 0.2 + i * 0.15, ease: [0.16, 1, 0.3, 1] }}
+                style={{ color: line.gold ? "var(--color-accent)" : "var(--color-text-primary)", display: "inline-block" }}
+              >
+                {line.text}
+              </motion.span>
+              {line.breakAfter && <br />}
+            </span>
           ))}
         </h1>
 
@@ -158,7 +161,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
           style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "17px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "560px", margin: 0 }}
         >
-          A Especialização em Aristóteles vai te ensinar a pensar como o maior filósofo pensava. Domine as grandes áreas da filosofia clássica — Lógica, Filosofia da Natureza, Ética, Política e Metafísica — diretamente nas fontes primárias do autor. Estude do jeito certo com Lucca de Tomás, e saia da superficialidade moderna.
+          Chegou a hora de estudar com método, seguindo o currículo de uma das universidades mais renomadas do mundo em educação clássica, o Thomas Aquinas College. O maior projeto online de ensino aristotélico em língua portuguesa do mundo está com turmas abertas: estude na ordem certa, direto das fontes primárias, com um mestre guiando cada passo, mesmo que nunca tenha estudado filosofia antes.
         </motion.p>
 
         {/* CTAs */}
@@ -180,7 +183,7 @@ export default function Hero() {
             }}
           >
             <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "15px", color: "var(--color-text-on-accent)" }}>
-              Conheça mais sobre o curso
+              Quero conhecer a Especialização
             </span>
           </Link>
         </motion.div>

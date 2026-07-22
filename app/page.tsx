@@ -1,11 +1,14 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import PainPoints from "@/components/PainPoints";
 import Solutions from "@/components/Solutions";
 import About from "@/components/About";
 import Formation from "@/components/Formation";
-import Curriculum from "@/components/Curriculum";
 import Founder from "@/components/Founder";
+import HowItWorks from "@/components/HowItWorks";
 import TurmaFundadora from "@/components/TurmaFundadora";
+import ForWho from "@/components/ForWho";
+import Guarantee from "@/components/Guarantee";
 import CTAIngresso from "@/components/CTAIngresso";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -17,13 +20,16 @@ export default function Home() {
       <SmoothScroll />
       <Navbar />
       <Hero />
+      <PainPoints />
       <About />
-      <Formation />
       <Solutions />
-      <Curriculum />
       <Founder />
+      <HowItWorks />
+      <Formation />
       <TurmaFundadora />
+      <ForWho />
       <CTAIngresso />
+      <Guarantee />
       <FAQ />
       <Footer />
     </main>
