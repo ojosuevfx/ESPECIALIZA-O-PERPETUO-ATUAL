@@ -67,7 +67,7 @@ export default function Formation() {
             </h2>
           </div>
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "340px", margin: 0, flexShrink: 0 }} className="formation-subtext">
-            A Especialização segue a divisão tradicional das disciplinas, na ordem em que a filosofia clássica sempre foi estudada. São 4 anos de formação.
+            A Especialização segue a divisão tradicional das disciplinas, na ordem em que a filosofia clássica sempre foi estudada. São 3 anos de formação.
           </p>
         </motion.div>
 

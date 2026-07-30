@@ -6,17 +6,17 @@ const items = [
   {
     n: "01",
     title: "Você lê antes da aula",
-    desc: "O aluno chega ao encontro com contato prévio com o texto, preparado para acompanhar a discussão e participar melhor.",
+    desc: "O aluno chega ao encontro com contato prévio com o texto, preparado para entender e refletir sobre o tema da aula.",
   },
   {
     n: "02",
-    title: "A discussão é guiada pelo Lucca",
+    title: "A aula é guiada pelo Lucca",
     desc: "A aula percorre o raciocínio do filósofo com direção, perguntas e retomadas, para transformar leitura difícil em compreensão sólida.",
   },
   {
     n: "03",
     title: "Informação vira conhecimento",
-    desc: "Explicar um ponto, ouvir outro aluno e retornar ao texto torna a assimilação muito mais profunda do que assistir passivamente.",
+    desc: "Com a experiência de sala de aula que o Lucca possui, ele traz uma série de dúvidas que normalmente os alunos possuem e já perguntaram para ele, tornando assim a aula muito mais profunda.",
   },
   {
     n: "04",
@@ -52,7 +52,7 @@ export default function HowItWorks() {
             </h2>
           </div>
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "380px", margin: 0, flexShrink: 0 }} className="how-subtext">
-            Na maioria dos cursos, o professor fala por uma hora e meia e o aluno esquece quase tudo depois. Na Especialização, a aula é uma discussão guiada: você lê, participa e percorre o raciocínio do filósofo até compreender com profundidade o que ele queria dizer.
+            Na maioria dos cursos, o professor fala por uma hora e meia e o aluno esquece quase tudo depois. Na Especialização, a aula é uma exposição do conteúdo, capítulo a capítulo, para que o aluno absorva todos os detalhes. Você lê o texto, percorre o raciocínio do Filósofo e compreende com exatidão o que ele queria dizer.
           </p>
         </motion.div>
 

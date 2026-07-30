@@ -8,14 +8,12 @@ const faqs = [
   { q: "Preciso ser católico?", a: "Não. Há alunos agnósticos e protestantes. O currículo é filosófico, ainda que dialogue naturalmente com a tradição clássica e cristã." },
   { q: "Preciso saber latim ou grego?", a: "Não. Todas as obras utilizadas no percurso são traduzidas pelo Lucca." },
   { q: "Só serve para quem já é avançado?", a: "Não. O currículo leva da estaca zero ao ápice, começando pela lógica e avançando até a metafísica." },
-  { q: "Não tenho muito tempo, consigo acompanhar?", a: "Sim. As gravações e os 2 anos extras de acesso permitem que você estude no seu próprio ritmo, sem perder o percurso." },
-  { q: "É ao vivo ou gravado?", a: "Você acompanha ao vivo o que está sendo gravado e também tem acesso às gravações anteriores para revisar quantas vezes precisar." },
   { q: "Como irei acessar as aulas?", a: "As aulas ficam gravadas e disponíveis na Plataforma Hubla, que possui aplicativo próprio para celular, em que você pode acessar no ônibus para a faculdade ou no caminho para o trabalho. Poderá assistir no seu próprio ritmo e revisar as aulas sempre que precisar." },
   { q: "Tem garantia?", a: "Sim. Você tem 7 dias de garantia incondicional após o início das aulas. Se perceber que o programa não é para você, a devolução é integral." },
-  { q: "O acesso é vitalício?", a: "Você acompanhará as aulas gravadas, que serão disponibilizadas na plataforma toda a semana, durante todo o tempo das gravações. Depois de gravada a última aula, prevista para junho de 2029, você poderá acessar a plataforma com as aulas por mais 2 anos, para estudar ou revisar todo o conteúdo, fixando bem todas as partes da obra do Filósofo." },
+  { q: "O acesso é vitalício?", a: "Sim. O acesso é vitalício: assista quando quiser para entender com profundidade todas as partes da obra do Filósofo." },
   { q: "O programa é presencial?", a: "Não. É 100% online." },
   { q: "Quanto custa?", a: "O investimento é apresentado pelo consultor após a candidatura gratuita." },
-  { q: "Quais as formas de pagamento?", a: "Pagamento via PIX ou cartão de crédito. Se ambos não forem possíveis, converse com a nossa equipe e encontraremos um caminho para a sua matrícula." },
+  { q: "Quais as formas de pagamento?", a: "Pagamento via PIX ou cartão de crédito. Se ambos não forem possíveis, converse com o consultor da nossa equipe, após preencher o formulário, e encontraremos um caminho para a sua matrícula." },
 ];
 
 function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {

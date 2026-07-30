@@ -92,13 +92,8 @@ const benefits = [
   },
   {
     Icon: IconFlexibility,
-    title: "6 anos de acesso no total",
-    desc: "São 4 anos de formação completa e mais 2 anos de acesso às gravações para revisar todo o conteúdo com calma.",
-  },
-  {
-    Icon: IconSummary,
-    title: "Aulas com discussão guiada",
-    desc: "Acompanhe as aulas sendo gravadas, participe da discussão e revise as gravações quantas vezes quiser.",
+    title: "Acesso vitalício:",
+    desc: "São 3 anos de formação completa com aulas semanais e acesso vitalício para revisar quando quiser.",
   },
   {
     Icon: IconGuide,
