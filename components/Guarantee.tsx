@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Guarantee() {
@@ -81,23 +80,6 @@ export default function Guarantee() {
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "16px", lineHeight: "170%", color: "#8A9AA4", margin: 0, maxWidth: "620px" }}>
             Se dentro de 7 dias você perceber que a Especialização não é para você, devolvemos 100% do seu investimento. Sem burocracia.
           </p>
-          <Link
-            href="https://wa.me/5555559936959?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20da%20Especializa%C3%A7%C3%A3o%20e%20gostaria%20de%20falar%20com%20um%20consultor."
-            className="btn-cta"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "14px 30px",
-              borderRadius: "200px",
-              background: "linear-gradient(90deg, #c8a96e 0%, #e2c98a 100%)",
-              textDecoration: "none",
-              marginTop: "6px",
-            }}
-          >
-            <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "14px", color: "#0D0F10" }}>
-              Tire suas dúvidas com nosso time
-            </span>
-          </Link>
         </div>
       </motion.div>
 
