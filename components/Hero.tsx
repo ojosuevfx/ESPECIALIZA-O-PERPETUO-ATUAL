@@ -186,6 +186,21 @@ export default function Hero() {
               Quero conhecer a Especialização
             </span>
           </Link>
+          <Link
+            href="#ingresso"
+            className="btn-cta"
+            style={{
+              display: "inline-flex", alignItems: "center", gap: "8px",
+              padding: "14px 32px", borderRadius: "200px",
+              background: "transparent",
+              border: "1px solid rgba(200,169,110,0.45)",
+              textDecoration: "none", transition: "border-color 180ms ease",
+            }}
+          >
+            <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "15px", color: "var(--color-accent)" }}>
+              Fazer minha matrícula
+            </span>
+          </Link>
         </motion.div>
       </motion.div>
 
