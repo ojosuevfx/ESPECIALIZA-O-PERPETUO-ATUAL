@@ -113,8 +113,8 @@ const benefits = [
   },
   {
     Icon: IconSupport,
-    title: "Suporte diário e tutoria mensal",
-    desc: "Canal de suporte ativo todos os dias e sessão mensal de tutoria diretamente com Lucca de Tomás.",
+    title: "Suporte diário",
+    desc: "Canal de suporte ativo todos os dias para tirar suas dúvidas.",
   },
 ];
 
